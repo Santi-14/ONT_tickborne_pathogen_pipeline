@@ -19,9 +19,9 @@ per-sample coverage summaries.
 7. Filter reads by BLAST result, CIGAR alignment length, MAPQ, and supplementary alignment flag.
 8. Generate sorted/indexed BAM files and coverage summary CSV files.
 
-## Repository Status
+## Repository Contents
 
-The shell and Python scripts in `scripts/` correspond to the analysis workflow used for ONT sequencing data processing in this study. The workflow depends on local reference files and Guppy barcoding resources that must be installed or configured before execution.
+The shell and Python scripts in `scripts/` correspond to the analysis workflow used for ONT sequencing data processing in this study.
 
 Included reference files:
 
@@ -34,9 +34,6 @@ Included reference files:
 The tick-borne pathogen mapping reference used by the pipeline is included in `references/genome.fasta`, with an accession manifest and checksum.
 
 The workflow requires users to configure local paths for the host reference genome, ONT/Guppy barcoding resources, and any BLAST database used for confirmation. See `docs/reference_database_setup.md` for setup details.
-
-See `docs/reference_database_setup.md` for details on expected reference files
-and BLAST database construction.
 
 Do not commit patient/sample sequencing data, FASTQ files, BAM files, or analysis
 outputs to this repository.
