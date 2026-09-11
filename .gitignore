@@ -1,0 +1,48 @@
+# Raw sequencing data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+
+# Alignment and intermediate files
+*.sam
+*.bam
+*.bai
+*.fasta
+*.fa
+*.fna
+*.fai
+!references/genome.fasta
+!references/genome_manifest.tsv
+!references/genome.fasta.sha256
+
+# BLAST databases and outputs
+*.nhr
+*.nin
+*.nsq
+*.ndb
+*.not
+*.ntf
+*.nto
+blasted_seqs.txt
+
+# Pipeline outputs
+analysis/
+Raw_fastq/
+demuxed_data_95/
+*_results/
+*_total_coverage.csv
+coverage.txt
+reads_mapped.txt
+fastp.html
+fastp.json
+
+# Local config
+config/pipeline.env
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
