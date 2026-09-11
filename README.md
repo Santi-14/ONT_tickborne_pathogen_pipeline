@@ -21,9 +21,7 @@ per-sample coverage summaries.
 
 ## Repository Status
 
-The shell and Python scripts in `scripts/` were reconstructed from the scripts
-used to run the analysis. The workflow also depends on local reference files and
-Guppy barcoding resources that must be installed or generated before execution.
+The shell and Python scripts in `scripts/` correspond to the analysis workflow used for ONT sequencing data processing in this study. The workflow depends on local reference files and Guppy barcoding resources that must be installed or configured before execution.
 
 Included reference files:
 
@@ -31,14 +29,11 @@ Included reference files:
 - `references/genome_manifest.tsv`: accession and description manifest for `genome.fasta`
 - `references/genome.fasta.sha256`: checksum for the included reference FASTA
 
-Required local files still needed:
+## Reference Files
 
-- `config/barcodes.csv`
-- Guppy barcoding template files, if custom demultiplexing is required
-- Human reference genome FASTA
-- Original prebuilt BLAST database, if exact historical rerun is required. The
-  source FASTA for the original database was not available during repository
-  reconstruction; see `docs/reference_database_setup.md`.
+The tick-borne pathogen mapping reference used by the pipeline is included in `references/genome.fasta`, with an accession manifest and checksum.
+
+The workflow requires users to configure local paths for the host reference genome, ONT/Guppy barcoding resources, and any BLAST database used for confirmation. See `docs/reference_database_setup.md` for setup details.
 
 See `docs/reference_database_setup.md` for details on expected reference files
 and BLAST database construction.
