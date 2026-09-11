@@ -88,5 +88,5 @@ The workflow creates an `analysis/` directory containing:
 
 ## Citation
 
-If used in a manuscript, cite the GitHub repository release or Zenodo DOI once a
-stable release has been created.
+The ONT sequencing analysis pipeline used in this study is available at:
+https://github.com/Santi-14/ONT_tickborne_pathogen_pipeline
